@@ -29,7 +29,7 @@
         <!-- <p>I am!</p> -->
     ```
     
-# Anatomy of HTML Document
+## Anatomy of HTML Document
 ```
     <doctype html>
     <html lang="en-us">
@@ -47,6 +47,21 @@
 <br>&lt;doctype html&gt; is the shortest string of characters count as a valid doctype.
 *UTF-8 is character encoding, which includes most characters from the vast majority of human written languages.
 
+# What's in the head? Metadata in HTML
+* contains information such as 
+    * `<title>`
+    * link to css
+    * links to custom fevicons
+    * other metadata 
+        * data about the HTML, such as author, important keywords that describe the document.
+* specifying a discription that includes keywords relating to content of our page is useful as it has potential to make our page appear higher in relevant searches performed in search engine (i.e. Search Engine Optimization). Ex: `<meta name="description" content="This web docs aims to provide short note of HTML">`
+    * Nowadays these are ignored by search engines, because spammers were just filling the keyword list with hundreds of keywords, biasing results.
+* Sitelinks
+    * are relevant subpages listed below the main home page link of searched site.
+    * configurable Google's webmaster tools (a way to make our site's search result better in google search engine)
+* Open Graph Data
+    * a metadata protocol
+    * invented by Facebook to provide richer matadata for websites.
 # HTML Elements
 1. Paragraph element `<p></p>`
 2. Image tag `<img>` : Atttributes are src (is required attribute), alt, width, height ...
@@ -55,16 +70,22 @@
 4. `<html>` element : wraps all the content on the page
     * Sometimes known as the root element.
 5. `<head>` element : Acts as a container for everything included on HTML page, that is  not the content.
-6. `<meta>` element : this element represents metadata (data about data) that cannot be represented by other HTML meta related elements, like `<base>`, `<link>`, `<script>`, `<style>`, or `<title>`.
-    * Attributes are charset ...
-7. `<title>` element : sets the title of the page (i.e, title that appears in the browser tab). Also discribe the page when it is bookmarked.<* 
+6. `<meta>` element
+    * is an official way of adding metadata to a document
+    * this element represents metadata (data about data) that cannot be represented by other HTML meta related elements, like `<base>`, `<link>`, `<script>`, `<style>`, or `<title>`.
+    * Attributes are charset, name, content ...
+7. `<title>` element 
+    * sets the title of the page (i.e, title that appears in the browser tab and also discribe the page when it is bookmarked). 
+    * is a metadata.
 8. `<body>` element : contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, etc.
 
 # HTML Attributes
-* src : Specifies the location of data
-* alt : specifies text description of the image.
-* width and height: expressed in pixels.
-* disabled : boolean attribute, used to disable input elements.
-* href: specifies the web address the link points to.
-* title: specifies text discription of linked page.
-* charset attribute specifies character encoding for our document.
+* **src** : Specifies the location of data
+* **alt** : specifies text description of the image.
+* **width** and height: expressed in pixels.
+* **disabled** : boolean attribute, used to disable input elements.
+* **href**: specifies the web address the link points to.
+* **title**: specifies text discription of linked page.
+* **charset**: specifies character encoding for our document.
+* **name**: specifies the type of meta element it is; what type of information it contains. eg. name="author", etc.
+* **content**: Specifies the actual meta content. example: content="Prakriti", etc.
